@@ -1,2 +1,1 @@
 # Chess
-chess with ai 
