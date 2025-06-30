@@ -14,11 +14,11 @@ class pawn(piece):
         super().__init__(color, pos)
     def get_valid_moves(self):
         if self.color == Color.WHITE:
-            if first_move(self):
+            if self.first_move(self):
                 return [self.pos.row+2]
             return [self.pos.row+1]
         else:
-            if first_move():
+            if self.first_move():
                 return [self.pos.row+2]
              
             return [self.pos.row-1]
