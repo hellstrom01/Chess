@@ -1,3 +1,5 @@
+from position import Position
+from move import Move
 class Board:
     def __init__(self,grid = None):
         if grid is None:
@@ -12,7 +14,8 @@ class Board:
         """only using when gui is not implemented"""
         for i in self.grid:
             print(i)
-    def get_piece(self, row:int,col:int):
+    def get_piece(self, pos:Position):
         """gets the piece of a specific position"""
-        return self.grid[row][col]
-    
+        return self.grid[pos.row][pos.col]
+    def move_piece(self,move:Move ):
+        pass
